@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/porfo/static/css/main.bb3852ef.css",
-    "main.js": "/porfo/static/js/main.28625775.js",
+    "main.css": "/porfo/static/css/main.2b8d8768.css",
+    "main.js": "/porfo/static/js/main.8cc01efb.js",
     "static/js/787.202b8111.chunk.js": "/porfo/static/js/787.202b8111.chunk.js",
     "index.html": "/porfo/index.html",
-    "main.bb3852ef.css.map": "/porfo/static/css/main.bb3852ef.css.map",
-    "main.28625775.js.map": "/porfo/static/js/main.28625775.js.map",
+    "main.2b8d8768.css.map": "/porfo/static/css/main.2b8d8768.css.map",
+    "main.8cc01efb.js.map": "/porfo/static/js/main.8cc01efb.js.map",
     "787.202b8111.chunk.js.map": "/porfo/static/js/787.202b8111.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.bb3852ef.css",
-    "static/js/main.28625775.js"
+    "static/css/main.2b8d8768.css",
+    "static/js/main.8cc01efb.js"
   ]
 }
