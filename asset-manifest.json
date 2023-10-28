@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/porfo%20/static/css/main.bb3852ef.css",
+    "main.js": "/porfo%20/static/js/main.5f5364d7.js",
+    "static/js/787.202b8111.chunk.js": "/porfo%20/static/js/787.202b8111.chunk.js",
+    "index.html": "/porfo%20/index.html",
+    "main.bb3852ef.css.map": "/porfo%20/static/css/main.bb3852ef.css.map",
+    "main.5f5364d7.js.map": "/porfo%20/static/js/main.5f5364d7.js.map",
+    "787.202b8111.chunk.js.map": "/porfo%20/static/js/787.202b8111.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.bb3852ef.css",
+    "static/js/main.5f5364d7.js"
+  ]
+}
