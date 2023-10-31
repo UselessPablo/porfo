@@ -1,6 +1,14 @@
-body{
-  background: #244c6d;
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Maven+Pro:wght@400;500&family=Quicksand:wght@500&family=Roboto:wght@100;400&display=swap');
+
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden; 
+background: #daeeff;
 }
+
 
 #wrapper{
     width: 100%;
@@ -8,7 +16,7 @@ body{
     margin: 0px auto;
     display: flex;
     justify-content: center;
-    margin-left: 4%;
+    margin-left: 4.1%;
    
 }
 .gears{
@@ -19,15 +27,25 @@ body{
   margin-right: 3%;
 }
 .gears-container{
-    width:200px; 
+    width:220px; 
     height: 200px;
     font-size:34px;
     padding: 9%;
     position: relative; 
     margin: 0px auto;
 }
-
-
+.maven {
+  font-family: 'Maven Pro';
+}
+.fondo{
+  background-image: url(../src/img/fondoand.png);
+ background-attachment: fixed ;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+.fondo2{
+  background-color: transparent;
+}
 .gear-rotate{
 	width: 2em;
 	height: 2em;
@@ -35,7 +53,7 @@ body{
   left: 50%; 
   margin-top: -1em;
   margin-left: -1em;
-	background: #E9E581;
+	background: #81c3e9;
 	position: absolute;
 	border-radius: 1em;
 	-webkit-animation: 1s gear-rotate linear infinite;
@@ -47,7 +65,7 @@ body{
   top: 50%;
   width: 2em;
 	height: 2em;
-	background: #E9E581;
+	background:#81c3e9;
 	position: absolute;
 	border-radius: 1em;
   -webkit-animation: 1s gear-rotate-left linear infinite;
@@ -59,7 +77,7 @@ body{
 	width: 2.8em;
 	height: 2.8em;
 	background: 
-    -webkit-linear-gradient(0deg,transparent 39%,#E9E581 39%,#E9E581 61%, transparent 61%),
+    -webkit-linear-gradient(0deg,transparent 39%,#81e986 39%,#E9E581 61%, transparent 61%),
     -webkit-linear-gradient(60deg,transparent 42%,#E9E581 42%,#E9E581 58%, transparent 58%),
     -webkit-linear-gradient(120deg,transparent 42%,#E9E581 42%,#E9E581 58%, transparent 58%);
 	background: 
@@ -72,9 +90,9 @@ body{
     -o-linear-gradient(120deg,transparent 42%,#47EC19 42%,#E9E581 58%, transparent 58%);
 	background: -ms-linear-gradient(0deg,transparent 39%,#E9E581 39%,#E9E581 61%, transparent 61%),-ms-linear-gradient(60deg,transparent 42%,#E9E581 42%,#E9E581 58%, transparent 58%),-ms-linear-gradient(120deg,transparent 42%,#E9E581 42%,#E9E581 58%, transparent 58%);
 	background: 
-      linear-gradient(0deg,transparent 39%,#E9E581 39%,#E9E581 61%, transparent 61%),
-    linear-gradient(60deg,transparent 42%,#E9E581 42%,#E9E581 58%, transparent 58%),
-    linear-gradient(120deg,transparent 42%,#E9E581 42%,#E9E581 58%, transparent 58%);
+      linear-gradient(0deg,transparent 39%,#81c3e9 39%,#81c3e9 61%, transparent 61%),
+    linear-gradient(60deg,transparent 42%,#81c3e9 42%,#81c3e9 58%, transparent 58%),
+    linear-gradient(120deg,transparent 42%,#81c3e9 42%,#81c3e9 58%, transparent 58%);
 	position: absolute;
 	content:"";
 	top: -.4em;

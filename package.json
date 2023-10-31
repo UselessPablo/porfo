@@ -1,7 +1,7 @@
 {
   "name": "porfolio",
   "version": "0.1.0",
-  "homepage": "https://gitname.github.io/porfo ",
+  "homepage": "https://uselesspablo.github.io/porfo/",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.11.1",
