@@ -1,17 +1,22 @@
 import React from 'react'
 import BackButton from './BackButton'
-import { Box, Button, Typography, Tooltip, Grid } from '@mui/material'
+import { Box, Button, Typography, Tooltip, Grid} from '@mui/material'
 import SettingsIcon from '@mui/icons-material/Settings';
 import CollectionsIcon from '@mui/icons-material/Collections';
 import ContactPageIcon from '@mui/icons-material/ContactPage';
 import Clock from './Clock';
+import signal from '../icons/signal2.png'
+import wifi from '../icons/wifi.png'
+import batery from '../icons/battery.png'
+
 
 export const Español = () => {
     
   
     const iconStyle = {
-        fontSize: '40px',
+        fontSize: '30px',
         color: 'black'
+        
     };
   
     return (
@@ -25,34 +30,41 @@ export const Español = () => {
            
             <Grid item>
              
-                <Box className="fondo" sx={{ pb: 5, pt: 5, pr: 3, pl: 3, width: '360px' }}>
-                    <Box sx={{display:'flex', justifyContent:'space-between'}}>
-                        <Typography color={'black'} variant='subtitle2' fontWeight={'bold'} sx={{position:'relative', left:'-6px'}} ><Clock/></Typography> 
+                <Box className="fondo" sx={{  pr: 2, pl: 2, width: '360px' }}>
+                    <Box sx={{display:'flex', justifyContent:'space-between', position:'absolute',pt:0.5}}>
+                        <Typography color={'black'} variant='subtitle2' fontWeight={'bold'} sx={{position:'relative', left:'-9px', top:'-4'}} ><Clock/></Typography> 
+                  
                    </Box>   
-                   
+                    <Box sx={{display:'flex', justifyContent:'end', pt:0.5, position:'relative',mr:'-10px'}}>
+                        <img src={wifi} />
+                        <img src={signal} />
+                        <img src={batery} />
+                    </Box>
                     <Box
                         sx={{ display: 'flex', justifyContent: 'center', mb: '40vh',mt:'9vh', backgroundColor: 'transparent' }}
                     >
                         
                         <Typography variant="h4" paddingTop={10}>
                             <Clock />
+                       
                         </Typography>
-                    </Box>
-                    <Box sx={{ display: 'flex', justifyContent: 'center' }}>
-                        <BackButton />
-                    </Box>
+                 </Box>
                     <Box sx={{ display: 'flex', justifyContent: 'space-around', alignItems: 'center',mt:'50px'}}>
                         <Tooltip title="Galería">
-                            <Button startIcon={<CollectionsIcon style={iconStyle} />} />
+                            <Button variant='contained' sx={{ borderRadius: '2rem', pb: '2', pt: '2', pl: '0.8rem', pr: '0', backgroundColor: 'grey' }} startIcon={<CollectionsIcon style={iconStyle} />} />
                         </Tooltip>
                         <Tooltip title="Contacto">
-                            <Button startIcon={<ContactPageIcon style={iconStyle} />} />
+                            <Button variant='contained' sx={{ borderRadius: '2rem', pt: '1', pl: '0.8rem', pr: '0', backgroundColor: 'grey' }} startIcon={<ContactPageIcon style={iconStyle} />} />
                         </Tooltip>
                         <Tooltip title="Configuración">
-                            <Button startIcon={<SettingsIcon style={iconStyle} />} />
+                            <Button variant='contained' sx={{ borderRadius: '2rem', pt: '1', pl: '0.8rem', pr: '0', backgroundColor:'grey' }} startIcon={<SettingsIcon style={iconStyle} />} />
                         </Tooltip>
+                   
                     </Box>
-                </Box>
+                    <Box sx={{ display: 'flex', justifyContent: 'end', mr:'-30px' }}>
+                        <BackButton />
+                    </Box>
+                    </Box>
             </Grid>
         </Grid>
     );
