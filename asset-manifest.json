@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/porfo/static/css/main.fd4efc8c.css",
-    "main.js": "/porfo/static/js/main.c5f874a8.js",
+    "main.css": "/porfo/static/css/main.b8f476cc.css",
+    "main.js": "/porfo/static/js/main.a0dbbb93.js",
     "static/js/787.202b8111.chunk.js": "/porfo/static/js/787.202b8111.chunk.js",
-    "static/media/montaña.jpg": "/porfo/static/media/montaña.408bd35ef880786a421f.jpg",
+    "static/media/pixel.jpg": "/porfo/static/media/pixel.9470d079be9fcd6d48ed.jpg",
     "index.html": "/porfo/index.html",
-    "main.fd4efc8c.css.map": "/porfo/static/css/main.fd4efc8c.css.map",
-    "main.c5f874a8.js.map": "/porfo/static/js/main.c5f874a8.js.map",
+    "main.b8f476cc.css.map": "/porfo/static/css/main.b8f476cc.css.map",
+    "main.a0dbbb93.js.map": "/porfo/static/js/main.a0dbbb93.js.map",
     "787.202b8111.chunk.js.map": "/porfo/static/js/787.202b8111.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.fd4efc8c.css",
-    "static/js/main.c5f874a8.js"
+    "static/css/main.b8f476cc.css",
+    "static/js/main.a0dbbb93.js"
   ]
 }
