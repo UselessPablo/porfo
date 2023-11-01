@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/porfo/static/css/main.d8f24724.css",
-    "main.js": "/porfo/static/js/main.47116084.js",
+    "main.css": "/porfo/static/css/main.f7ef2914.css",
+    "main.js": "/porfo/static/js/main.0ee85ed2.js",
     "static/js/787.202b8111.chunk.js": "/porfo/static/js/787.202b8111.chunk.js",
-    "static/media/fondoand.png": "/porfo/static/media/fondoand.1899466641ef6efd87e2.png",
+    "static/media/montaña.jpg": "/porfo/static/media/montaña.408bd35ef880786a421f.jpg",
     "index.html": "/porfo/index.html",
-    "main.d8f24724.css.map": "/porfo/static/css/main.d8f24724.css.map",
-    "main.47116084.js.map": "/porfo/static/js/main.47116084.js.map",
+    "main.f7ef2914.css.map": "/porfo/static/css/main.f7ef2914.css.map",
+    "main.0ee85ed2.js.map": "/porfo/static/js/main.0ee85ed2.js.map",
     "787.202b8111.chunk.js.map": "/porfo/static/js/787.202b8111.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d8f24724.css",
-    "static/js/main.47116084.js"
+    "static/css/main.f7ef2914.css",
+    "static/js/main.0ee85ed2.js"
   ]
 }
