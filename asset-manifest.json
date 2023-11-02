@@ -1,16 +1,19 @@
 {
   "files": {
-    "main.css": "/porfo/static/css/main.b8f476cc.css",
-    "main.js": "/porfo/static/js/main.ee42a27d.js",
+    "main.css": "/porfo/static/css/main.43d1b866.css",
+    "main.js": "/porfo/static/js/main.7f08605c.js",
     "static/js/787.202b8111.chunk.js": "/porfo/static/js/787.202b8111.chunk.js",
+    "static/media/Captura de pantalla 2023-11-02 152653.png": "/porfo/static/media/Captura de pantalla 2023-11-02 152653.151de1ee49ac6bd90bc7.png",
     "static/media/pixel.jpg": "/porfo/static/media/pixel.9470d079be9fcd6d48ed.jpg",
+    "static/media/Curriculum.png": "/porfo/static/media/Curriculum.b30ea8a0d5bc02b3c1c6.png",
+    "static/media/servicio.png": "/porfo/static/media/servicio.8952014a6fd39df13bfb.png",
     "index.html": "/porfo/index.html",
-    "main.b8f476cc.css.map": "/porfo/static/css/main.b8f476cc.css.map",
-    "main.ee42a27d.js.map": "/porfo/static/js/main.ee42a27d.js.map",
+    "main.43d1b866.css.map": "/porfo/static/css/main.43d1b866.css.map",
+    "main.7f08605c.js.map": "/porfo/static/js/main.7f08605c.js.map",
     "787.202b8111.chunk.js.map": "/porfo/static/js/787.202b8111.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b8f476cc.css",
-    "static/js/main.ee42a27d.js"
+    "static/css/main.43d1b866.css",
+    "static/js/main.7f08605c.js"
   ]
 }
