@@ -8,7 +8,12 @@ html, body {
   overflow: hidden; 
 background: #daeeff;
 }
-
+.miniaturas{
+  color: #1b1b1b;
+  width: 60px;
+  height: 40px;
+  border-radius: 1rem;
+}
 
 #wrapper{
     width: 100%;
@@ -42,15 +47,14 @@ img{
   height: 14px;
   color: rgb(255, 255, 255);
 }
+
 .fondo{
-  background-image: url(../src/img/montaña.jpg);
+  background-image: url(../src/img/pixel.jpg);
  background-attachment: fixed ;
   background-size: 100% 100%;
   background-repeat: no-repeat;
 }
-.fondo2{
-  background-color: transparent;
-}
+
 .gear-rotate{
 	width: 2em;
 	height: 2em;
