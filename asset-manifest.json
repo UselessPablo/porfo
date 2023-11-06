@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/porfo/static/css/main.67724c86.css",
-    "main.js": "/porfo/static/js/main.9ed7bc84.js",
+    "main.css": "/porfo/static/css/main.188f5708.css",
+    "main.js": "/porfo/static/js/main.3640119c.js",
     "static/js/787.202b8111.chunk.js": "/porfo/static/js/787.202b8111.chunk.js",
     "static/media/Captura de pantalla 2023-11-02 152653.png": "/porfo/static/media/Captura de pantalla 2023-11-02 152653.151de1ee49ac6bd90bc7.png",
-    "static/media/pixel.jpg": "/porfo/static/media/pixel.9470d079be9fcd6d48ed.jpg",
+    "static/media/fondooscuro.webp": "/porfo/static/media/fondooscuro.4bd09a114923eb97a174.webp",
     "static/media/Curriculum.png": "/porfo/static/media/Curriculum.b30ea8a0d5bc02b3c1c6.png",
     "static/media/servicio.png": "/porfo/static/media/servicio.8952014a6fd39df13bfb.png",
     "index.html": "/porfo/index.html",
-    "main.67724c86.css.map": "/porfo/static/css/main.67724c86.css.map",
-    "main.9ed7bc84.js.map": "/porfo/static/js/main.9ed7bc84.js.map",
+    "main.188f5708.css.map": "/porfo/static/css/main.188f5708.css.map",
+    "main.3640119c.js.map": "/porfo/static/js/main.3640119c.js.map",
     "787.202b8111.chunk.js.map": "/porfo/static/js/787.202b8111.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.67724c86.css",
-    "static/js/main.9ed7bc84.js"
+    "static/css/main.188f5708.css",
+    "static/js/main.3640119c.js"
   ]
 }
