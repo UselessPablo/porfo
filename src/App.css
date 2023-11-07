@@ -13,8 +13,11 @@ background: #daeeff;
   width: 60px;
   height: 40px;
   border-radius: 1rem;
+  margin-bottom: 4px;
 }
-
+.clima{
+ width: 30px;
+}
 #wrapper{
     width: 100%;
     /* max-width: 725px; */
@@ -42,17 +45,23 @@ background: #daeeff;
 .maven {
   font-family: 'Maven Pro';
 }
-img{
-  width: 14px;
-  height: 14px;
-  color: rgb(255, 255, 255);
-}
 
 .fondo{
-  background-image: url(../src/img/pixel.jpg);
+  background-image: url(../src/img/fondooscuro.webp);
+ background-attachment: fixed ;
+  background-size:380 100vh;
+  background-repeat: no-repeat;
+}
+.fondoContact{
+  background-color: rgb(8, 8, 8);
  background-attachment: fixed ;
   background-size: 100% 100%;
   background-repeat: no-repeat;
+   backdrop-filter: blur(10px);
+  
+}
+.fondoClaro{
+  background-color: #ebf3eb;
 }
 
 .gear-rotate{

@@ -11,7 +11,7 @@ function BackButton() {
     };
     const iconStyle = {
         fontSize: '40px', 
-        color:'black'
+        color:'white'
     };
 
     return (

@@ -20,10 +20,7 @@ const Clock = () => {
 
     return (
         <Box sx={{ display: 'flex', justifyContent: 'center', alignContent: 'center', flexDirection: 'column' }}>
-       
                 {formattedTime}
-        
-       
         </Box>
   )
 }
