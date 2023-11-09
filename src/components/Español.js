@@ -144,9 +144,9 @@ const goSettings = ()=>{
     return (
         <ThemeProvider theme={selectedTheme}>
         
-            <Box className={backgroundClass} sx={{ pr: 2, pl: 2, width:'100%', height: '100%' }}>
-                        <Box sx={{ display: 'flex', justifyContent: 'space-between', position: 'absolute', pt: 0.5 }}>
-                    <Typography  color={'primary.main'} variant="subtitle2" sx={{ position: 'relative', left: '-9px', top: '-4' }}>
+            <Box className={backgroundClass} sx={{ width:'100%', height: '100%' }}>
+                        <Box sx={{ display: 'flex', justifyContent: 'space-between', position: 'absolute', pt: 0.5, ml:2 }}>
+                    <Typography  color={'primary.main'} variant="subtitle2" sx={{ position: 'relative', left: '-8px', top: '-4' }}>
                                 <Clock />
                             </Typography>
                         </Box>
@@ -155,7 +155,7 @@ const goSettings = ()=>{
                             <SignalCellular2BarIcon style={iconStyleBar} sx={{ color: 'primary.main' }} />
                             <Battery30Icon style={iconStyleBar} sx={{ color: 'primary.main' }} />
                         </Box>
-                        <Box sx={{ display: 'flex', justifyContent: 'start', mb: '55vh', mt: '9vh', color: 'white' }}>
+                        <Box sx={{ display: 'flex', justifyContent: 'start', mb: '55vh', mt: '9vh', color: 'white',ml:2 }}>
                     <Typography  variant="h4" paddingTop={2} color={'primary.main'}>
                                 <Date />
                                 <Box sx={{ display: 'flex', alignItems: 'center', position:'absolute' }}>
@@ -222,7 +222,7 @@ const goSettings = ()=>{
                             </List>
                         </Drawer>
                 <Link href="https://www.google.com" sx={{ textDecoration: 'none' }}>
-<Box sx={{ display:'flex', justifyContent:'space-between', borderRadius:'4rem', height:'42px', backgroundColor:'google.main', mt:4,mr:3, alignItems:'center'}}>
+<Box sx={{ display:'flex', justifyContent:'space-between', borderRadius:'4rem', height:'42px', backgroundColor:'google.main', mt:4, mr:4,ml:4, alignItems:'center'}}>
                     
 <GoogleIcon sx={{ml:2}} />
 <SearchIcon sx={{mr:2}}/>

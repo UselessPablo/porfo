@@ -52,9 +52,9 @@ const Settings = () => {
     return (
         <ThemeProvider theme={selectedTheme}>
            
-                    <Box className={backgroundClass} sx={{ pr: 2, pl: 2, width: '100%', height: '100%' }}>
+                    <Box className={backgroundClass} sx={{width: '100%', height: '100%' }}>
                         <Box sx={{ display: 'flex', justifyContent: 'space-between', position: 'absolute', pt: 0.5 }}>
-                    <Typography  color={'primary.main'} variant="subtitle2"  sx={{ position: 'relative', left: '-9px', top: '-4' }}>
+                    <Typography  color={'primary.main'} variant="subtitle2"  sx={{ position: 'relative', left: '8px', top: '-4' }}>
                                 <Clock />
                             </Typography>
                         </Box>

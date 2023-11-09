@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import { Typography, Box } from '@mui/material';
+import format from 'date-fns/format';
+import enUS from 'date-fns/locale/en-US';
 
-function DisplayDate() {
+function EngDate() {
     const [currentDate, setCurrentDate] = useState(new Date());
 
     useEffect(() => {
@@ -12,18 +14,14 @@ function DisplayDate() {
         return () => clearInterval(intervalId);
     }, []);
 
-    const options = { weekday: 'long', day: 'numeric', month: 'short' };
-    const formattedDate = new Intl.DateTimeFormat('es-ES', options)
-        .format(currentDate)
-        .replace(/^\w/, (c) => c.toUpperCase());
+    const formattedDate = format(currentDate, 'iii, MMM d', { locale: enUS });
 
-    return(
-    <Box sx={{display:'flex'}}>
+    return (
+        <Box sx={{ display: 'flex' }}>
             <Typography color={'green'} fontWeight={'bold'} marginRight={'4px'}>It's: </Typography>
             <Typography>{formattedDate}</Typography>
-    
         </Box>
-);
+    );
 }
 
-export default DisplayDate;
+export default EngDate;
