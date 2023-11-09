@@ -15,7 +15,9 @@ export const SettingsProvider = ({ children }) => {
     };
 
     const toggleBackground = () => {
+        toggleDarkMode();
         setIsLightBackground(!isLightBackground);
+        
     };
 
     return (

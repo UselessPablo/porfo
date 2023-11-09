@@ -1,5 +1,5 @@
-import { Typography } from '@mui/material';
 import React, { useState, useEffect } from 'react';
+import { Typography, Box } from '@mui/material';
 
 function DisplayDate() {
     const [currentDate, setCurrentDate] = useState(new Date());
@@ -12,12 +12,18 @@ function DisplayDate() {
         return () => clearInterval(intervalId);
     }, []);
 
-    const options = { year: 'numeric', month: 'short', day: 'numeric' };
-    const formattedDate = new Intl.DateTimeFormat('es-ES', options).format(currentDate);
+    const options = { weekday: 'long', day: 'numeric', month: 'short' };
+    const formattedDate = new Intl.DateTimeFormat('es-ES', options)
+        .format(currentDate)
+        .replace(/^\w/, (c) => c.toUpperCase());
 
-    return (
-        <Typography>It's: {formattedDate}</Typography>
-    );
+    return(
+    <Box sx={{display:'flex'}}>
+            <Typography color={'lightGreen'} fontWeight={'bold'} marginRight={'4px'}>It's: </Typography>
+            <Typography>{formattedDate}</Typography>
+    
+        </Box>
+);
 }
 
 export default DisplayDate;

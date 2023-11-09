@@ -10,40 +10,51 @@ import SignalCellular2BarIcon from '@mui/icons-material/SignalCellular2Bar';
 import NetworkWifiIcon from '@mui/icons-material/NetworkWifi';
 import Battery30Icon from '@mui/icons-material/Battery30';
 import { ThemeProvider, createTheme } from '@mui/material/styles';
-import Date from './Date';
+import { useSettings } from './utils/SettingsContext'
 import {orange, yellow, grey} from '@mui/material/colors';
 
-const theme = createTheme({
+
+const lightTheme = createTheme({
     palette: {
         primary: {
-            main: orange[200],
+            main: grey[900],
         },
         secondary: {
             main: yellow[200],
         },
-        oscuro: {
-            main: orange[600],
-             },
-                  claro: {
+    },
+});
+
+const darkTheme = createTheme({
+    palette: {
+        primary: {
             main: grey[100],
+        },
+        secondary: {
+            main: yellow[600],
         },
     },
 });
 
 const Contact = () => {
     const navigate = useNavigate();
+   
+    const { isDarkMode, isLightBackground } = useSettings();
+
+    const selectedTheme = isDarkMode ? darkTheme : lightTheme;
+    const backgroundClass = isLightBackground ? 'fondoClaro' : 'fondoContact';
 
     const iconStyle = {
         fontSize: '35px',
-        color: 'white',
+     
     };
     const ArrowStyle = {
         fontSize: '40px',
-        color: 'white',
+       
     };
     const iconStyleBar = {
         fontSize: '16px',
-        color: 'white',
+        
     };
     const github = () => {
         window.open("https://github.com/UselessPablo");
@@ -54,32 +65,24 @@ const Contact = () => {
     const BackButton = () => {
         navigate('/espanol');
     };
-
+   
     return (
-        <ThemeProvider theme={theme}>
-            <Grid
-                container
-                direction="column"
-                justifyContent="center"
-                alignItems="center"
-                style={{ height: '100%' }}
-                paddingTop={4}
-            >
-                <Grid item>
-                    <Box className="fondoContact" sx={{ pr: 2, pl: 2, width: '360px', height: '100%' }}>
+        <ThemeProvider theme={selectedTheme}>
+           
+            <Box className={backgroundClass} sx={{ pr: 2, pl: 2, width: '100%', height: '100%' }}>
                         <Box sx={{ display: 'flex', justifyContent: 'space-between', position: 'absolute', pt: 0.5 }}>
-                            <Typography color={'white'} variant="subtitle2"  sx={{ position: 'relative', left: '-9px', top: '-4' }}>
+                            <Typography color={'primary.main'} variant="subtitle2"  sx={{ position: 'relative', left: '-9px', top: '-4' }}>
                                 <Clock />
                             </Typography>
                         </Box>
-                        <Box sx={{ display: 'flex', justifyContent: 'end', pt: 0.5, position: 'relative', mr: '-10px' }}>
-                            <NetworkWifiIcon style={iconStyleBar} sx={{ color: 'claro.main' }} />
-                            <SignalCellular2BarIcon style={iconStyleBar} sx={{ color: 'claro.main' }} />
-                            <Battery30Icon style={iconStyleBar} sx={{ color: 'claro.main' }} />
+                        <Box sx={{ display: 'flex', justifyContent: 'end', pt: 0.5, position: 'relative', mr: '15px' }}>
+                            <NetworkWifiIcon style={iconStyleBar} sx={{ color: 'primary.main' }} />
+                            <SignalCellular2BarIcon style={iconStyleBar} sx={{ color: 'primary.main' }} />
+                            <Battery30Icon style={iconStyleBar} sx={{ color: 'primary.main' }} />
                         </Box>
-                        <Box sx={{ overflowY: 'scroll', display: 'flex', flexDirection: 'column', mb: '38vh', mt: '17vh' }}>
-                            <Typography textAlign={'center'} color={'white'}>Pablo Auterio</Typography>
-                            
+                        <Box sx={{ overflowY: 'scroll', display: 'flex', flexDirection: 'column', mb: '13.3vh', mt: '18vh' }}>
+                            <Typography textAlign={'center'} color={'primary.main'}>Pablo Auterio</Typography>
+                    <Typography textAlign={'center'} color={'primary.main'}>FrontEnd Developer</Typography>
                             <Button onClick={() => {
                                 const phoneNumber = '+5492944895986';
                                 const whatsappUrl = `https://wa.me/${phoneNumber}`;
@@ -87,15 +90,20 @@ const Contact = () => {
                             }} startIcon={<WhatsAppIcon style={iconStyle}/>} ></Button>
                             <Button onClick={github} startIcon={<GitHubIcon style={iconStyle} />} ></Button>
                             <Button onClick={linkedin} startIcon={<LinkedInIcon style={iconStyle} />} ></Button>
-                            
+                    <Typography textAlign={'center'} color={'primary.main'}> React Js</Typography>
+                    <Typography textAlign={'center'} color={'primary.main'}> HTML</Typography>
+                    <Typography textAlign={'center'} color={'primary.main'}> CSS</Typography>
+                    <Typography textAlign={'center'} color={'primary.main'}> JavaScript</Typography>
+                    <Typography textAlign={'center'} color={'primary.main'}> Git</Typography>
+                    <Typography textAlign={'center'} color={'primary.main'}> SEO</Typography>
+                    <Typography textAlign={'center'} color={'primary.main'}> MUI Js </Typography>
                         </Box>
 
-                        <Box sx={{ display: 'flex', justifyContent: 'end', mr: '-30px',pb:'10px',pt:'5px' }}>
+                        <Box sx={{ display: 'flex', justifyContent: 'end',alignContent:'flex-end'}}>
                             <Button startIcon={<ArrowLeftIcon style={ArrowStyle} />} onClick={BackButton} />
                         </Box>
                     </Box>
-                </Grid>
-            </Grid>
+          
         </ThemeProvider>
     );
 };

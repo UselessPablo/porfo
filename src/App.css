@@ -3,11 +3,12 @@
 
 html, body {
   height: 100%;
-  margin: 0;
+  margin: 2;
   padding: 0;
   overflow: hidden; 
 background: #daeeff;
 }
+
 .miniaturas{
   color: #1b1b1b;
   width: 60px;
@@ -42,26 +43,29 @@ background: #daeeff;
     position: relative; 
     margin: 0px auto;
 }
-.maven {
-  font-family: 'Maven Pro';
-}
 
 .fondo{
   background-image: url(../src/img/fondooscuro.webp);
  background-attachment: fixed ;
-  background-size:380 100vh;
+ background-size: cover;
   background-repeat: no-repeat;
+  position: absolute;
 }
 .fondoContact{
-  background-color: rgb(8, 8, 8);
+  background-image: url(../src/img/fondooscuro.webp);
  background-attachment: fixed ;
-  background-size: 100% 100%;
+ background-size: cover;
   background-repeat: no-repeat;
-   backdrop-filter: blur(10px);
+  position: absolute;
   
 }
 .fondoClaro{
-  background-color: #ebf3eb;
+  background-image: url(../src/img/pixel.jpg);
+ background-attachment: fixed ;
+  background-repeat: no-repeat;
+  position: absolute;
+  object-fit: cover;
+  position: absolute;
 }
 
 .gear-rotate{
